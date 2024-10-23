@@ -60,10 +60,7 @@
     translate: 0 -20px;
 }
 
+.border1{
+    border: 1px solid black;
 
-/*oussama*/
-
-.adjust{
-    height: 35rem;
-    width: 80%;
 }
