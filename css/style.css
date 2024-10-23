@@ -42,7 +42,8 @@
     display: block;
 }
 #mobile-menu a:hover {
-    background-color: #0e9ec2;
+    background-color: #ff214f;
+    color: white;
 }
 
 .icon-size {
