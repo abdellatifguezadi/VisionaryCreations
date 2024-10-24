@@ -9,6 +9,21 @@
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
+   
+}
+.bgc{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: inherit;
+    width: inherit;
+    position: absolute;
+}
+
+.bgc2{
+    background-color: rgba(0, 0, 0, 0.9);
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    z-index: 10;
 }
 
 
