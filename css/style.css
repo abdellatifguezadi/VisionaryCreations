@@ -3,7 +3,7 @@
     width: 100%; 
     height: 40rem; 
     display: flex; 
-    background-image: url("../imgs/header.jpg");
+    background-image: url("../images/header.jpg");
     justify-content: center; 
     align-items: center; 
     background-size: cover; 
@@ -72,11 +72,28 @@
     border-radius: 3.2PX;
     padding : 6px 12px; 
 }
-.translate-1{
-    translate: 0 -20px;
+
+
+.photobg2{
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    background-image: url("../images/about.jpg");
+    justify-content: center; 
+    align-items: center; 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
 }
 
-.border1{
-    border: 1px solid black;
-
+.photobg3{
+    width: 100%; 
+    height: 25rem; 
+    display: flex; 
+    background-image: url("../images/about.jpg");
+    justify-content: center; 
+    align-items: center; 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
 }
