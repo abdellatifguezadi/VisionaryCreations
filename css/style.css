@@ -126,27 +126,61 @@ header {
 }
 
 
-
-.open {
+  .overlay{
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 10000;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .overlay.active {
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    z-index: 100;
-    overflow-y: hidden;
-  }
-  
-  .none {
-    display: none;
-  }
-  
-  #mobile-menu a:active {
-    background-color: #ff214f;
+    align-items: center;
+    opacity: 1;
+}
+
+
+.video-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    transform: scale(0.7);
+    transition: transform 0.3s ease-in-out;
+}
+
+.overlay.active .video-container {
+    transform: scale(1);
+}
+
+
+.close-btn {
+    position: absolute;
+    top: -40px;
+    right: -40px;
     color: white;
+    font-size: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.close-btn:hover {
+    transform: scale(1.1);
+}
+
+
+.video-container iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
