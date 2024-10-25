@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Fixé</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 10px;
+            position: fixed; /* Fixe l'en-tête en haut de la page */
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000; /* Assure que le header est au-dessus des autres éléments */
+        }
+        main {
+            margin-top: 50px; /* Crée un espace pour éviter que le contenu ne soit caché par le header */
+            height: 2000px; /* Simule un long contenu */
+            background: #f4f4f4;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Mon En-tête Fixé
+    </header>
+    <main>
+        Contenu principal...<br><br>
+        ... (ajoutez plus de contenu pour tester le défilement) ...
+    </main>
+</body>
+</html>
