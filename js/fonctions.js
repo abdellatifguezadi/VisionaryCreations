@@ -11,3 +11,27 @@ function hideImg() {
     const imgContainer = document.getElementById('imageContainer');
     imgContainer.classList.add('hidden');
 }
+
+
+function LoginFonctin(){
+    const Sign_Up = document.getElementById('Sign_Up');
+    const login = document.getElementById('login');
+
+    Sign_Up.classList.remove('flex');
+    Sign_Up.classList.add('hidden');
+
+    login.classList.remove('hidden');
+    login.classList.add('flex');
+
+}
+function SignFonctin(){
+    const Sign_Up = document.getElementById('Sign_Up');
+    const login = document.getElementById('login');
+
+    Sign_Up.classList.remove('hidden');
+    Sign_Up.classList.add('flex');
+    
+    login.classList.remove('flex');
+    login.classList.add('hidden');
+
+}
